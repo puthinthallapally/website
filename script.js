@@ -1,7 +1,7 @@
-gsap.from(".reveal", {
-  y: 60,
-  opacity: 0,
-  duration: 1.2,
-  stagger: 0.2,
-  ease: "power4.out"
-});
+function animate() {
+  requestAnimationFrame(animate);
+  points.rotation.x += 0.0003;
+  points.rotation.y += 0.0006;
+  renderer.render(scene, camera);
+}
+
